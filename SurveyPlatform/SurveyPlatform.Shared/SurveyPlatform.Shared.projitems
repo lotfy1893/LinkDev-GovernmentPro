@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="SharedProjectFile_SccProperties">
+    <SharedProjectFile_ProjectGuid>{9360b5ef-04ea-4ce3-a4cb-c450f974b62a}</SharedProjectFile_ProjectGuid>
+    <SharedProjectFile_SccProjectName>SAK</SharedProjectFile_SccProjectName>
+    <SharedProjectFile_SccAuxPath>SAK</SharedProjectFile_SccAuxPath>
+    <SharedProjectFile_SccLocalPath>SAK</SharedProjectFile_SccLocalPath>
+    <SharedProjectFile_SccProvider>SAK</SharedProjectFile_SccProvider>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>d553901d-ef94-498e-9aa7-1c91ed3ff60c</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>SurveyPlatform</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Common\BindableBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\BooleanToVisibilityConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\CountToVisibilityConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\HTMLStripConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\JSonFeed.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\CacheManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SurveyControl\Helpers\OrientedSize.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SurveyControl\Helpers\SurveyTemplateSelector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SurveyControl\Helpers\WrapPanel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SurveyControl\Models\Questionanswer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SurveyControl\Models\Question.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SurveyControl\Models\Questiongroup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SurveyControl\Models\QuestionTypes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SurveyControl\Models\Response.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SurveyControl\Models\ResponseAnswer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SurveyControl\Models\Survey.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SurveyControl\ViewModels\SurveyViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SurveyControl\Views\Survey.xaml.cs">
+      <DependentUpon>Survey.xaml</DependentUpon>
+    </Compile>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\LightGray.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\MediumGray.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DarkGray.png" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NavigationHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\RelayCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\SuspensionManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\ObservableDictionary.cs" />
+    <PRIResource Include="$(MSBuildThisFileDirectory)Strings\en-US\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)SurveyControl\Views\Survey.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+</Project>
